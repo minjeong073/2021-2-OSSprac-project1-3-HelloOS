@@ -1,18 +1,21 @@
 <!doctype html>
 <html>
    <body>
-   
+    <form action = "/result" method = "POST">
       <table border = 1>
          {% for key, value in detail.items() %}
-         
+
             <tr>
                <th> {{ key }} </th>
                <td> {{ value }} </td>
             </tr>
-            
+
          {% endfor %}
       </table>
-      <input style="float: left;" type="button" value="MODIFY" onClick="history.go(-1)">
-      <input type = "button" value = "SUBMIT" >
+
+
+      <button onClick="location.href='/result'">SUBMIT</button>
+    </form>
+      <button onClick = "history.back();">MODIFY</button>
    </body>
 </html>
