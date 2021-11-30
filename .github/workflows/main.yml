@@ -5,7 +5,7 @@ on:
     branches: [ main ]
 
 env:
-  DOCKER_IMAGE: ghcr.io/${{ github.actor }}/ossp_flaskapp    #생성할 이미지 명
+  DOCKER_IMAGE: ghcr.io/${{ github.actor }}/ossp_team_project_1    #생성할 이미지 명
   VERSION: ${{ github.sha }}
   NAME: ossprac_container    #생성할 컨테이너 명
 
